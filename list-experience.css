@@ -1,0 +1,32 @@
+ul.list-experience{
+    list-style: none;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+ul.list-experience::before{
+        content:"";
+        display: inline-block;
+        width: 2px;
+        background:linear-gradient(to bottom, var(--white) 50%, var(--red) 50%);
+        position: absolute;
+        left:3px;
+        top:5px;
+        height: calc(100% - 10px );
+    }
+    ul.list-experience li{
+      position: relative;
+      padding-left: 15px;
+      margin-bottom:15px;
+    }
+    ul.list-experience li::before{
+        content:"";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: var(--green);
+        position: absolute;
+        left:0;
+        top:5px;
+        border-radius: 10px;
+      }

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Oxygen&family=Roboto:wght@500&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.bg-main-content{
+    background-color: var(--dark-navy);
+    color:var(--white);
+}
+.navbar-light .navbar-nav .nav-link{
+    color:var(--white);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color:var(--green);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:var(--green);
+}
+.navbar-nav>.nav-item{
+    font-size: var(--fz-lg);
+}
+.naming-header{
+    font-weight: 400;
+    font-size: var(--fz-xl-heading);
+    line-height: 5.7rem;
+}
+.gray-text{
+    color:gray;
+}
+.ct-greeting,.ct-title{
+    color: #e7e4e4eb;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--lightest-slate);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark-slate);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-navy);
+  }
+  
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --red:#E62E51;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --fz-xl-heading:5.3rem;
+}
+.btn-outline-custom{
+    border:2px solid var(--green);
+    border-radius: 3px;
+    color:var(--white);
+}
+.btn-outline-custom:hover{
+    color:var(--green);
+}
+.content-heading>b{
+    font-size: var(--fz-heading);
+    padding: 5px 0;
+    display: inline-block;
+    position:relative;
+}
+.content-heading>b::before{
+    content:"";
+    width:100%;
+    height:3px;
+    left:0;
+    top:0;
+    position:absolute;
+    z-index:9;
+    background:linear-gradient(to right, var(--white) 50%, var(--red) 50%);
+}
+.content-heading>b::after{
+    content:"";
+    width:100%;
+    height:3px;
+    left:0;
+    bottom:0;
+    position:absolute;
+    z-index:9;
+    background:linear-gradient(to right, var(--red) 50%, var(--white) 50%);
+}
+.hOvuuP {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--light-slate);
+}
+.dVLQAC {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.dVLQAC::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+.dVLQAC li {
+    padding-bottom: 12px;
+}
+.dVLQAC li a {
+    padding: 10px;
+    text-decoration: none;
+    color:var(--light-slate)
+}
+.dVLQAC li a:hover, .dVLQAC li a:focus {
+    transform: translateY(-3px);
+    color: var(--pink);
+}
+.dVLQAC li a svg {
+    width: 20px;
+    height: 20px;
+}
+.ctJWL {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+}
+.ctLFJ {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.ctLFJ a {
+    padding: 10px;
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color:var(--light-slate)
+}
+.ctLFJ a:hover, .ctLFJ a:focus {
+    transform: translateY(-3px);
+    color: var(--pink);
+}
+.ctLFJ::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
