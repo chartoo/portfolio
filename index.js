@@ -25,3 +25,8 @@ document.onkeydown = (e) => {
   )
     return false;
 };
+
+var currentLocation=window.location.href;
+document.getElementById("fb-share-link").href = "https://www.facebook.com/sharer/sharer.php?u="+currentLocation+"&_rdr";
+document.getElementById("twitter-share-link").href = "https://twitter.com/intent/tweet?url="+currentLocation;
+document.getElementById("linkedin-share-link").href = "https://www.linkedin.com/sharing/share-offsite/?url="+currentLocation;
