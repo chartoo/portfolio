@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.K.Htwe</title>
+    <title>Aung.Kyaw.Htwe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" type="text/css"  href="./list-experience.css">
+    <style>
+        .bg-dark-sticky{
+            background-color: black;
+            margin-top:-1px;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-main-content pb-5">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +47,10 @@
                     <h1 class="naming-header">
                         <span class="ct-greeting">Hi,</span><br>
                         <span class="ct-name">I'm Aung Kyaw Htwe,</span><br>
-                        <span class="ct-title">Web developer</span>
+                        <span class="ct-title">Software Engineer</span>
                     </h1>
                     <p class="gray-text show-highlight">
-                        Web developer / Laravel Expert
+                        PHP Expert
                     </p>
                 </div>
             </div>
@@ -157,5 +163,21 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('bg-dark-sticky');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('bg-dark-sticky');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            } 
+        });
+        }); 
+    </script>
 </body>
 </html>
