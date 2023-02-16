@@ -3,6 +3,7 @@
     font-family: 'Oswald', sans-serif;
     font-family: 'Oxygen', sans-serif;
     font-family: 'Roboto', sans-serif;
+    user-select: none !important;
 }
 .bg-main-content{
     background-color: var(--dark-navy);
@@ -24,6 +25,9 @@
     font-weight: 400;
     font-size: var(--fz-xl-heading);
     line-height: 5.7rem;
+}
+.naming-header>.ct-title{
+    font-size: 3.3rem;
 }
 .gray-text{
     color:gray;
@@ -126,7 +130,7 @@
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 40px;
     margin: 0px auto;
     background-color: var(--light-slate);
 }
@@ -173,14 +177,18 @@
     color:var(--light-slate)
 }
 .ctLFJ a:hover, .ctLFJ a:focus {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     color: var(--pink);
 }
 .ctLFJ::after {
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 40px;
     margin: 0px auto;
     background-color: var(--light-slate);
+}
+
+.exp-timeline{
+    color:  var(--red);
 }

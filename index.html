@@ -11,7 +11,25 @@
     <style>
         .bg-dark-sticky{
             background-color: black;
-            margin-top:-1px;
+            margin-top:-2px;
+        }
+        .bg-profile-img{
+            position: absolute;
+            right:0;
+            top:10%;
+            width: 40%;
+        }
+        .bg-profile-img>img{
+            z-index: 0;
+            width:100% !important;
+        }
+        .header-section, #aboutme {
+            z-index: 30;
+        }
+        @media only screen and (max-width: 600px) {
+            .bg-profile-img{
+                width:63% !important;
+            }
         }
     </style>
 </head>
@@ -35,7 +53,7 @@
                             <a class="nav-link" href="#contactme">Contact</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link btn btn-sm btn-outline-custom px-3 py-1" href="https://tinyurl.com/mrypj76f" target="_blank">Resume</a>
+                            <a class="nav-link btn btn-sm btn-outline-custom px-3 py-1" href="https://tinyurl.com/32htwsaa" target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +61,7 @@
         </nav>
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-9 header-section">
                     <h1 class="naming-header">
                         <span class="ct-greeting">Hi,</span><br>
                         <span class="ct-name">I'm Aung Kyaw Htwe,</span><br>
@@ -53,6 +71,10 @@
                         PHP Expert
                     </p>
                 </div>
+                <div class="col-3 bg-profile-img">
+                    <img src="dev-akh.png" alt="" class="w-100">
+                </div>
+
             </div>
         </div>
     <section class="py-5" id="aboutme">
@@ -102,7 +124,7 @@
                                 <div>
                                     Software Engineer @  <a href="https://gca.com.mm/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white">Global Connect Asia</a> (Yangon, Myanmar) - <a href="https://www.judgify.me/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white">Judgify</a> based on <a href="https://globalsignin.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white"> GlobalSignIn (Singapore)</a>
                                 </div>
-                                <small>August, 2020 - Present</small> 
+                                <small class="exp-timeline">August, 2020 - Present</small> 
                                 <ul class="list-unstyled p-3">
                                     <li>Responsibilities for features added and upgraded.</li>
                                     <li>Making to be sure the UAT (include Load tesing)</li>
@@ -114,7 +136,7 @@
                                 <div> 
                                     Web developer @ <a href="https://hostmyanmar.net" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white"> Host Myanmar</a> (Yangon, Myanmar)
                                 </div>
-                                <small>October, 2018 - July, 2020</small> 
+                                <small class="exp-timeline">October, 2018 - July, 2020</small> 
                                 <ul class="list-unstyled p-3">
                                     <li>Worked with team of designer and project management to build successed websites and web-apps.</li>
                                     <li>Responsible for participating in the full life cycle of new websites and web apps development, and for implementing and maintaining.</li>
@@ -163,21 +185,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.getElementById('navbar_top').classList.add('bg-dark-sticky');
-                // add padding top to show content behind navbar
-                navbar_height = document.querySelector('.navbar').offsetHeight;
-                document.body.style.paddingTop = navbar_height + 'px';
-            } else {
-                document.getElementById('navbar_top').classList.remove('bg-dark-sticky');
-                // remove padding top from body
-                document.body.style.paddingTop = '0';
-            } 
-        });
-        }); 
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
