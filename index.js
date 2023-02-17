@@ -26,7 +26,18 @@ document.onkeydown = (e) => {
     return false;
 };
 
-var currentLocation=window.location.href;
-document.getElementById("fb-share-link-icon").href = "https://www.facebook.com/sharer/sharer.php?u="+currentLocation+"&_rdr";
-document.getElementById("twitter-share-link-icon").href = "https://twitter.com/intent/tweet?url="+currentLocation;
-document.getElementById("linkedin-share-link-icon").href = "https://www.linkedin.com/sharing/share-offsite/?url="+currentLocation;
+    var currentLocation=window.location.href;
+    function socialSharePopup(elm) {
+        var attribute = elm.getAttribute("data-href");
+        attribute+=currentLocation;
+        SharePopUpWin(attribute,400,500);
+    };
+    function SharePopUpWin(url, width, height) {
+        var leftPosition, topPosition;
+        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+        window.open(url, "Window2",
+        "status=no,height=" + height + ",width=" + width + ",resizable=yes,left="
+        + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY="
+        + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+    }
