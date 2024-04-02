@@ -35,6 +35,27 @@
     animation: shine 2s forwards, flicker 3s infinite;
   }
   
+  @media only screen and (max-width: 1200px) {
+    .highlight-text {
+      font-size: 2.5em !important;
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .highlight-text {
+      font-size: 2em !important;
+    }
+  }
+  @media only screen and (max-width: 710px) {
+    .highlight-text {
+      font-size: 1.5em !important;
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    .highlight-text {
+      font-size: 1em !important;
+    }
+  }
+
   @keyframes blink {
     0%,
     22%,

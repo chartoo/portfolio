@@ -200,3 +200,6 @@ background: var(--dark-navy);
 .exp-timeline{
     color:  var(--red);
 }
+#aboutme p{
+    text-align: justify;
+}
